@@ -52,7 +52,7 @@ Note: This is a public-facing windows server that VSI employees access.
   - For example: "Block all incoming HTTP traffic where the source IP comes from the city of Los Angeles."
 - Provide a screen shot of the geographic map that justifies why you created this rule.
   > Answer: 
-  > - Majority of attacks are coming from Ukraine, a firewall should be setup to block HTTP traffic coming from Ukraine. 
+  > - Majority of attacks are coming from Ukraine with a count of 2,164 (The US in second with a count of 1,158) a firewall should be setup to block HTTP traffic coming from Ukraine. 
   > - Description: "Block all incoming HTTP traffic where the source IP comes from the country of Ukraine" 
   
 ![map](Images/geographic_map.png)
