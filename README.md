@@ -29,10 +29,10 @@ Note: This is a public-facing windows server that VSI employees access.
 - Several users were impacted during the attack on March 25th.
 - Based on the attack signatures, what mitigations would you recommend to protect each user account? Provide global mitigations that the whole company can use and individual mitigations that are specific to each user.
   > answer:
-  > Global Mitigation: Adding two-factor authentication, to make accounts more secure making more difficult for anyone to access account.
-  > user_a: User account was locked out, based on the logs attacker tried to brute force its way into the account. Possible ways to mitigate problem would be to change password. Set an alert, to be triggered after multiple login attempts. 
-  > user_k: Attempt to reset account password, logs shows many attempts were made to change this users password. Way to mitigate is set an alarm that trigger after more than 1 reset attempt.
-  > user_j: account was successfully logged in. Password must be changed immediately.
+  > - Global Mitigation: Adding two-factor authentication, to make accounts more secure making more difficult for anyone to access account.
+  > - user_a: User account was locked out, based on the logs attacker tried to brute force its way into the account. Possible ways to mitigate problem would be to change password. Set an alert, to be triggered after multiple login attempts. 
+  > - user_k: Attempt to reset account password, logs shows many attempts were made to change this users password. Way to mitigate is set an alarm that trigger after more than 1 reset attempt.
+  > - user_j: account was successfully logged in. Password must be changed immediately.
   
 ![signatures](Images/Signatures.png)
   
