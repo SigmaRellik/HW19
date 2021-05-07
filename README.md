@@ -39,7 +39,9 @@ Note: This is a public-facing windows server that VSI employees access.
 #### Question 2
 - VSI has insider information that JobeCorp attempted to target users by sending "Bad Logins" to lock out every user.
 - What sort of mitigation could you use to protect against this?
-  > answer: Create policy that unlock users that get locked out after a set amount of time. Allow login from whitelisted IP addresses
+  > answer: 
+  > - Create policy that unlock users that get locked out after a set amount of time
+  > - Allow login from whitelisted IP addresses
   
 
 ### Part 2: Apache Webserver Attack:
@@ -49,10 +51,11 @@ Note: This is a public-facing windows server that VSI employees access.
 - Provide a "plain english" description of the rule.
   - For example: "Block all incoming HTTP traffic where the source IP comes from the city of Los Angeles."
 - Provide a screen shot of the geographic map that justifies why you created this rule.
-  > Answer: Majority of attacks are coming from Ukraine, a firewall should be setup to block HTTP traffic coming from Ukraine. 
-  - Description: "Block all incoming HTTP traffic where the source IP comes from the country of Ukraine" 
+  > Answer: 
+  > - Majority of attacks are coming from Ukraine, a firewall should be setup to block HTTP traffic coming from Ukraine. 
+  > - Description: "Block all incoming HTTP traffic where the source IP comes from the country of Ukraine" 
   
-![map]()
+![map](Images/geographic_map.png)
 
 #### Question 2
 
@@ -62,12 +65,13 @@ Note: This is a public-facing windows server that VSI employees access.
   - Conceive of two more rules in "plain english". 
   - Hint: Look for other fields that indicate the attacker.
   
-  > Answer: I would recommend using "useragent" and "uri_path" to create rules in order to protect VSI
-    - rule: "Block all incoming HTTP traffic with useragent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 2.0.50727987787; InfoPath.1)"
-    - rule: "Block all incoming HTTP traffic with uri_path "/VSI_Account_Logon.php" 
+  > Answer: 
+  > - I would recommend using "useragent" and "uri_path" to create rules in order to protect VSI
+  > - rule: "Block all incoming HTTP traffic with useragent "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 2.0.50727987787; InfoPath.1)"
+  > - rule: "Block all incoming HTTP traffic with uri_path "/VSI_Account_Logon.php" 
 
-![useragent]()
-![uri_path]()
+![useragent](Images/useragent.png)
+![uri_path](Images/uri_path.png)
 
 ### Guidelines for your Submission:
   
